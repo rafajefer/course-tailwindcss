@@ -1,0 +1,25 @@
+services:
+    app:
+        container_name: tailwindcss-container
+        build:
+            context: .
+            dockerfile: Dockerfile
+        restart: unless-stopped
+        working_dir: /app
+        volumes:
+          - .:/app
+        tty: true
+
+
+
+
+
+# docker build -t tailwindcss-image:latest .
+
+# docker run --rm -it --name app-container -v $(pwd):/app tailwindcss-image:latest bash
+
+# npm install -D tailwindcss
+# npx tailwindcss init
+
+
+# Failed to save 'tailwind.config.js': Insufficient permissions. Select 'Retry as Sudo' to retry as superuser.

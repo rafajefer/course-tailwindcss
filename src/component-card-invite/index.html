@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente Card Invite B7Web</title>
+    <link href="./output.css" rel="stylesheet" />
+    <!-- https://alunos.b7web.com.br/curso/tailwindcss/tailwindcss-exercicio-card-de-invite -->
+    <!-- docker exec -it tailwindcss-container npx tailwindcss -i ./src/component-card-invite/input.css -o ./src/component-card-invite/output.css --watch -->
+</head>
+<body>
+    <div class="m-4 w-96 rounded-md bg-gray-100 p-5">
+        <div class="flex">
+            <img src="https://www.american.edu/uploads/profiles/large/chris_palmer_profile_11.jpg" class="w-14 h-14 rounded-full" />
+            <div class="ml-4 flex-col align-middle">
+                <div>Rafael Jeferson Pena</div>
+                <div class="pt-3 text-gray-400">Te mandou um convite!</div>
+            </div>
+        </div>
+        <div class="pt-3">
+            <button class="w-24 cursor-pointer rounded-md bg-blue-600 px-5 py-2 text-white hover:bg-blue-700">Aceitar</button>
+            <button class="ml-3 w-24 rounded-md border-2 border-gray-200 bg-white px-5 py-2 hover:bg-gray-100">Negar</button>
+        </div>
+    </div>
+</body>
+</html>

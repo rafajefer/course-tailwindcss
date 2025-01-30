@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login B7Web</title>
+    <link href="./output.css" rel="stylesheet" />
+    <!-- https://alunos.b7web.com.br/curso/tailwindcss/tailwindcss-exercicio-tela-de-login -->
+    <!-- docker exec -it tailwindcss-container npx tailwindcss -i ./src/tela-login/input.css -o ./src/tela-login/output.css --watch -->
+</head>
+<body class="bg-red-500">
+    <main class="h-screen w-full bg-gray-800 px-4 py-6">
+        <h1 class="mb-4 text-center text-2xl font-bold text-white">Sistema de Login</h1>
+        <form method="POST" action="#">
+          <div class="mb-4 flex flex-col text-white">
+            <label for="email">Endereço de e-mail</label>
+            <input type="email" name="email" id="email" class="rounded-sm border-1 border-gray-400 bg-gray-600 p-1 outline-yellow-500" />
+          </div>
+          <div class="mb-4 flex flex-col text-white">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" class="rounded-sm border-1 border-gray-400 bg-gray-600 p-1 outline-yellow-500" />
+          </div>
+          <input type="submit" value="Entrar" class="mb-5 w-full cursor-pointer rounded-sm bg-yellow-500 py-2 font-bold text-white hover:bg-yellow-600" />
+        </form>
+        <p class="text-center text-gray-400">Não é membro? <a href="#" class="font-bold text-yellow-500 hover:underline hover:text-yellow-600">Faça seu cadastro agora</a></p>
+    </main>
+</body>
+</html>
