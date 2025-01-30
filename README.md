@@ -12,20 +12,22 @@ git clone https://github.com/rafajefer/course-tailwindcss.git
 cd course-tailwindcss
 ```
 
-### Buildando imagem e executando
+<!-- ### Buildando imagem e executando
 
 ```sh
 docker build -t tailwindcss-image:latest .
 docker run --rm -it --name app-container -v $(pwd):/app tailwindcss-image:latest bash
-```
+``` -->
 
 ### Instale as dependências do projeto
 
 ```sh
-npx tailwindcss -o tailwind.css
+docker compose up -d
 ```
 
-Utilize o CTRL D para sair
+```sh
+docker exec -it tailwindcss-container npm install
+```
 
 ### Comandos docker
 
